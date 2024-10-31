@@ -7,7 +7,7 @@ const tech_image_urls = [
   '/tech-images/Python-logo-notext.svg.png',
   '/tech-images/Amazon_Web_Services_Logo.svg.png',
   '/tech-images/Flask_logo.png',
-  '/tech-images/Tensorflow_logo.svg.png',
+  '/tech-images/Tensorflow_logo.png',
   '/tech-images/TB.png',
 ]
   return (
