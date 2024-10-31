@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaRegCompass } from "react-icons/fa";
+import tensorflowLogo from '../public/tech-images/TensorFlow_Logo.png'
 
 export default function Home() {
 const tech_image_urls = [
@@ -7,7 +8,7 @@ const tech_image_urls = [
   '/tech-images/Python-logo-notext.svg.png',
   '/tech-images/Amazon_Web_Services_Logo.svg.png',
   '/tech-images/Flask_logo.png',
-  '/tech-images/Tensorflow_logo.png',
+  tensorflowLogo,
   '/tech-images/TB.png',
 ]
   return (
