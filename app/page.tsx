@@ -29,8 +29,8 @@ const tech_image_urls = [
               <Image 
                 src={url}
                 alt="tech"
-                width={64}
-                height={64} />
+                width={128}
+                height={128} />
               </div>
           ))}
         </div>
