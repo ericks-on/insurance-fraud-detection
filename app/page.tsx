@@ -11,19 +11,19 @@ const tech_image_urls = [
   '/tech-images/TB.png',
 ]
   return (
-    <div className="w-screen flex flex-col justify-between h-screen p-4 relative">
-      <div className="absolute top-4 right-4 p-4 bg-black rounded text-white cursor-pointer shadow flex gap-2 justify-center items-center animate-bounce">
+    <div className="w-screen flex flex-col justify-between h-screen p-4 relative pt-20 md:pt-4">
+      <div className="absolute top-4 md:top-4 md:right-4 p-4 bg-black rounded text-white cursor-pointer shadow flex gap-2 justify-center items-center animate-bounce">
         <p>Click to explore</p>
         <FaRegCompass />
       </div>
-      <div className="flex items-center w-full flex-col">
-        <h1 className="text-4xl">Insurance Fraud Detection System</h1>
+      <div className="flex items-center w-full flex-col mb-8">
+        <h1 className="text-2xl md:text-4xl">Insurance Fraud Detection System</h1>
         <p className="text-sm">Guarding Trust, Detecting Fraud : Protecting Every Claim</p>
       </div>
       {/* tech container */}
       <div className="w-full flex flex-col gap-2 items-center">
         <h2 className="text-xl">Tech Stack</h2>
-        <div className="flex gap-4 items-center justify-center">
+        <div className="flex gap-4 items-center justify-center flex-wrap">
           {tech_image_urls.map((url, index) => (
             <div key={index} className="w-16 h-16">
               <Image 
@@ -36,7 +36,7 @@ const tech_image_urls = [
         </div>
       </div>
       {/* container of some cards */}
-      <div className='flex flex-col gap-4 justify-center w-full md:flex-row'>
+      <div className='flex flex-col gap-4 justify-center items-center w-full md:flex-row'>
         {/* cards */}
         <div className="flex flex-col rounded  border border-gray-100 w-80 shadow">
           <div className="w-full h-32 bg-gray-100 p-2 rounded-t">
