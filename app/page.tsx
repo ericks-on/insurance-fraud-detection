@@ -44,7 +44,9 @@ const tech_image_urls = [
             <h2 className="text-2xl max-w-40">Real-Time Fraud Detection</h2>
           </div>
           <div className="w-full h-64 p-2">
-            <p>Some text here</p>
+            <p>Detect fraudulent claims the moment they happen with our cutting-edge 
+              real-time analytics. Our system continuously monitors claims data, 
+              utilizing advanced machine learning models to instantly identify suspicious patterns and alert your team.</p>
           </div>
         </div>
         <div className="flex flex-col rounded  border border-gray-100 w-80 shadow">
@@ -52,7 +54,9 @@ const tech_image_urls = [
             <h2 className="text-2xl max-w-40">Ai-Powered Predictive Modelling</h2>
           </div>
           <div className="w-full h-64 p-2">
-            <p>Some text here</p>
+            <p>Anticipate and prevent fraud before it occurs with our advanced AI-driven predictive models. 
+              By analyzing vast amounts of historical and real-time data, 
+              our system identifies potential fraud risks and uncovers hidden patterns.</p>
           </div>
         </div>
         <div className="flex flex-col rounded  border border-gray-100 w-80 shadow">
@@ -60,7 +64,11 @@ const tech_image_urls = [
             <h2 className="text-2xl max-w-40">Seemless Integration</h2>
           </div>
           <div className="w-full h-64 p-2">
-            <p>Some text here</p>
+            <p>Effortlessly incorporate our fraud detection solution into your existing systems.
+              Our platform is designed to integrate smoothly with your workflows and claims processing software,
+              ensuring minimal disruption and a quick setup. With flexible API connections and support for various data formats,
+              you can enhance fraud prevention without overhauling your infrastructure, maximizing efficiency while keeping your
+              operations running smoothly.</p>
           </div>
         </div>
       </div>
