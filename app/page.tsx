@@ -66,9 +66,7 @@ const tech_image_urls = [
           <div className="w-full h-64 p-2">
             <p>Effortlessly incorporate our fraud detection solution into your existing systems.
               Our platform is designed to integrate smoothly with your workflows and claims processing software,
-              ensuring minimal disruption and a quick setup. With flexible API connections and support for various data formats,
-              you can enhance fraud prevention without overhauling your infrastructure, maximizing efficiency while keeping your
-              operations running smoothly.</p>
+              ensuring minimal disruption and a quick setup.</p>
           </div>
         </div>
       </div>
