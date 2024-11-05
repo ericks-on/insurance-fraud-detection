@@ -12,7 +12,7 @@ export default function RootLayout({
             <Link href="/dashboard" className="bg-gray-900 text-white p-4 hover:bg-gray-500 w-64 flex items-center justify-center">Insights</Link>
             <Link href="/dashboard" className="bg-gray-900 text-white p-4 hover:bg-gray-500 w-64 flex items-center justify-center">Sidebar</Link>
         </div>
-        <div className="overflow-auto w-full">{children}</div>
+        <div className="overflow-auto w-full h-screen p-2">{children}</div>
       </div>
     );
   }
