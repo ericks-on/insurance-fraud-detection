@@ -1,5 +1,4 @@
 import BlacklistedCustomersTable from "@/app/ui/balcklist-table";
-import ClaimsForm from "@/app/ui/claims-form";
 import FraudulentClaimsOverview from "@/app/ui/claims-overview";
 import ClaimsTable from "@/app/ui/claims-table";
 import FraudConfirmationForm from "@/app/ui/fraud-reporting-form";
@@ -13,7 +12,6 @@ export default function ClaimsPage(){
             <FraudulentClaimsOverview />
             <FraudSuspectedClaimsTable />
             <ClaimsTable /> 
-            <ClaimsForm />
         </div>
     )
 }
