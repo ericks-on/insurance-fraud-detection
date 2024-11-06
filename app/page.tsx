@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaRegCompass } from "react-icons/fa";
 import tensorflowLogo from '@/public/tech-images/TensorFlow_logo.png'
+import Link from "next/link";
 
 export default function Home() {
 const tech_image_urls = [
@@ -13,10 +14,10 @@ const tech_image_urls = [
 ]
   return (
     <div className="w-screen flex flex-col justify-between h-screen p-4 relative pt-20 md:pt-4">
-      <div className="absolute top-4 md:top-4 md:right-4 p-4 bg-black rounded text-white cursor-pointer shadow flex gap-2 justify-center items-center animate-bounce">
+      <Link href='/dashboard' className="absolute top-4 md:top-4 md:right-4 p-4 bg-black rounded text-white cursor-pointer shadow flex gap-2 justify-center items-center animate-bounce">
         <p>Click to explore</p>
         <FaRegCompass />
-      </div>
+      </Link>
       <div className="flex items-center w-full flex-col mb-8">
         <h1 className="text-2xl md:text-4xl">Insurance Fraud Detection System</h1>
         <p className="text-sm">Guarding Trust, Detecting Fraud : Protecting Every Claim</p>

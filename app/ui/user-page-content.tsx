@@ -10,10 +10,11 @@ interface UserPageContentProps {
     user: User;
     policies: Policy[];
     claims: Claim[];
+    policyNumbers: string[];
 }
 
 
-export default function UserPageContent({user, policies, claims}: UserPageContentProps){
+export default function UserPageContent({user, policies, claims, policyNumbers}: UserPageContentProps){
     const [claimFormVisible, setClaimsFormVisible] = useState(false)
     return(
         <div className="flex">
@@ -32,7 +33,7 @@ export default function UserPageContent({user, policies, claims}: UserPageConten
                 <h2 className="text-xl font-semibold mt-8 mb-4">Your Insurance Claims</h2>
                 <UserClaimsTable claims={claims} />
             </div>
-            <ClaimsForm claimsVisible={claimFormVisible}  />
+            <ClaimsForm claimsVisible={claimFormVisible} policyNumbers={policyNumbers} />
         </div>
     )
 }

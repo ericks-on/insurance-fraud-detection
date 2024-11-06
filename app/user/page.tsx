@@ -9,9 +9,11 @@ export default async function UserPage(){
     // Mock policies data
     const policies = await getUserPolicies(user.id)
 
+    const policyNumbers = policies.map(policy => policy.policy_number)
+
     // Mock claims data
     const claims = await getUserClaims(user.id)
     return(
-        <UserPageContent user={user} policies={policies} claims={claims} />
+        <UserPageContent user={user} policies={policies} claims={claims} policyNumbers={policyNumbers} />
     )
 }

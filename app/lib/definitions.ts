@@ -52,3 +52,17 @@ export type Claim = {
     capital_loss: number;
     month_as_customer: number;
 }
+
+export type Blacklist ={
+    id: string
+    customer_id:string;
+    reason: string;
+    blacklist_date: string;
+}
+
+export type FraudConfirmed = {
+    id: string;
+    claim_id: string;
+    date_confirmed: string;
+    is_fraud: boolean;
+}
