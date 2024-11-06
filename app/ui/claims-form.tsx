@@ -1,5 +1,6 @@
 import clsx from 'clsx';
-import React from 'react';
+import React, { useActionState } from 'react';
+import { addUserClaim } from '../lib/actions';
 
 interface ClaimsProps {
   claimsVisible: boolean;
@@ -7,13 +8,17 @@ interface ClaimsProps {
 }
 
 export default function ClaimsForm({ claimsVisible, policyNumbers }: ClaimsProps) {
+  const [errorMessage, formAction, isPending] = useActionState(
+    addUserClaim,
+    undefined,
+);
   return (
     <div className={clsx(
       "max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md",
       !claimsVisible && 'hidden'
     )}>
       <h1 className="text-2xl font-bold text-gray-700 mb-4">Insurance Claims Form</h1>
-      <form action="#" method="POST" className="space-y-8">
+      <form action={formAction} className="space-y-8">
 
         {/* Policy Information */}
         <section>
@@ -166,9 +171,13 @@ export default function ClaimsForm({ claimsVisible, policyNumbers }: ClaimsProps
             </div>
           </div>
         </section>
+                  
+        {/* Error Message */}
+        {errorMessage && <p className="text-sm text-red-600">{errorMessage}</p>}
 
         {/* Submit Button */}
-        <button type="submit" className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-md shadow hover:bg-blue-700">Submit Claim</button>
+        {isPending ? <p className="text-sm text-gray-600">Submitting claim...</p>:
+        <button type="submit" className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-md shadow hover:bg-blue-700">Submit Claim</button>}
 
       </form>
     </div>

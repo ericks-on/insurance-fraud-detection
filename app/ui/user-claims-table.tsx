@@ -30,7 +30,7 @@ const UserClaimsTable: React.FC<UserClaimsTableProps> = ({ claims }) => {
                         <tr key={claim.claim_id} className="border-b border-gray-200 hover:bg-gray-100">
                             <td className="py-3 px-6">{claim.claim_id}</td>
                             <td className="py-3 px-6">{claim.policy_number}</td>
-                            <td className="py-3 px-6">{format((new Date(claim.incident_date).toLocaleDateString()), 'yyyy-MM-dd')}</td>
+                            <td className="py-3 px-6">{format((new Date(claim.incident_date).toISOString()), 'yyyy-MM-dd')}</td>
                             <td className="py-3 px-6">{claim.incident_type}</td>
                             <td className="py-3 px-6">{claim.incident_severity}</td>
                             <td className="py-3 px-6">${claim.total_claim_amount}</td>
