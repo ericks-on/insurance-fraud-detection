@@ -1,17 +1,8 @@
 import { format } from 'date-fns';
 import React from 'react';
+import { Claim } from '../lib/definitions';
 
-interface Claim {
-    claimId: number;
-    policyNumber: number;
-    incidentDate: string; // You can use Date if preferred
-    incidentType: string;
-    incidentSeverity: string;
-    totalClaimAmount: number;
-    injuryClaim: number;
-    propertyClaim: number;
-    vehicleClaim: number;
-}
+
 
 interface UserClaimsTableProps {
     claims: Claim[];
@@ -36,16 +27,16 @@ const UserClaimsTable: React.FC<UserClaimsTableProps> = ({ claims }) => {
                 </thead>
                 <tbody className="text-gray-600 text-sm font-light">
                     {claims.map((claim) => (
-                        <tr key={claim.claimId} className="border-b border-gray-200 hover:bg-gray-100">
-                            <td className="py-3 px-6">{claim.claimId}</td>
-                            <td className="py-3 px-6">{claim.policyNumber}</td>
-                            <td className="py-3 px-6">{format((new Date(claim.incidentDate).toLocaleDateString()), 'yyyy-MM-dd')}</td>
-                            <td className="py-3 px-6">{claim.incidentType}</td>
-                            <td className="py-3 px-6">{claim.incidentSeverity}</td>
-                            <td className="py-3 px-6">${claim.totalClaimAmount.toFixed(2)}</td>
-                            <td className="py-3 px-6">${claim.injuryClaim.toFixed(2)}</td>
-                            <td className="py-3 px-6">${claim.propertyClaim.toFixed(2)}</td>
-                            <td className="py-3 px-6">${claim.vehicleClaim.toFixed(2)}</td>
+                        <tr key={claim.claim_id} className="border-b border-gray-200 hover:bg-gray-100">
+                            <td className="py-3 px-6">{claim.claim_id}</td>
+                            <td className="py-3 px-6">{claim.policy_number}</td>
+                            <td className="py-3 px-6">{format((new Date(claim.incident_date).toLocaleDateString()), 'yyyy-MM-dd')}</td>
+                            <td className="py-3 px-6">{claim.incident_type}</td>
+                            <td className="py-3 px-6">{claim.incident_severity}</td>
+                            <td className="py-3 px-6">${claim.total_claim_amount}</td>
+                            <td className="py-3 px-6">${claim.injury_claim}</td>
+                            <td className="py-3 px-6">${claim.property_claim}</td>
+                            <td className="py-3 px-6">${claim.vehicle_claim}</td>
                         </tr>
                     ))}
                 </tbody>

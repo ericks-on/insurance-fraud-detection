@@ -29,9 +29,9 @@ export default function UserPoliciesTable ({ policies }:UserPoliciesTableProps) 
                             <td className="py-3 px-6">{format((new Date(policy.policy_bind_date).toISOString()), 'yyyy-MM-dd')}</td>
                             <td className="py-3 px-6">{policy.policy_state}</td>
                             <td className="py-3 px-6">${policy.policy_csl}</td>
-                            <td className="py-3 px-6">${policy.policy_deductable.toFixed(2)}</td>
-                            <td className="py-3 px-6">${policy.policy_annual_premium.toFixed(2)}</td>
-                            <td className="py-3 px-6">${policy.umbrella_limit.toFixed(2)}</td>
+                            <td className="py-3 px-6">${policy.policy_deductable}</td>
+                            <td className="py-3 px-6">${policy.policy_annual_premium}</td>
+                            <td className="py-3 px-6">${policy.umbrella_limit}</td>
                         </tr>
                     ))}
                 </tbody>
