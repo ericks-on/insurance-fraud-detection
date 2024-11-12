@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import { getFraudSuspectedClaims } from "../lib/actions";
 
 export default async function FraudSuspectedClaimsTable() {
@@ -20,7 +21,7 @@ export default async function FraudSuspectedClaimsTable() {
             <tr key={claim.claim_id}>
               <td className="py-2 px-6 border-b">{claim.claim_id}</td>
               <td className="py-2 px-6 border-b">{claim.policy_number}</td>
-              <td className="py-2 px-6 border-b">{claim.incident_date}</td>
+              <td className="py-2 px-6 border-b">{format((new Date(claim.incident_date)).toISOString(), 'yyyy-MM-dd')}</td>
               <td className="py-2 px-6 border-b">{claim.incident_type}</td>
               <td className="py-2 px-6 border-b">{claim.total_claim_amount}</td>
             </tr>

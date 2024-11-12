@@ -62,7 +62,7 @@ const tech_image_urls = [
         </div>
         <div className="flex flex-col rounded  border border-gray-100 w-80 shadow">
           <div className="w-full h-32 bg-gray-100 p-2 rounded-t">
-            <h2 className="text-2xl max-w-40">Seemless Integration</h2>
+            <h2 className="text-2xl max-w-40">Seamless Integration</h2>
           </div>
           <div className="w-full h-64 p-2">
             <p>Effortlessly incorporate our fraud detection solution into your existing systems.

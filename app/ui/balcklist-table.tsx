@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import { getBlacklist } from "../lib/actions";
 
 export default async function BlacklistedCustomersTable() {
@@ -19,7 +20,7 @@ export default async function BlacklistedCustomersTable() {
               <tr key={customer.id} className="border-t border-gray-200">
                 <td className="py-3 px-6">{customer.customer_id}</td>
                 <td className="py-3 px-6">{customer.reason}</td>
-                <td className="py-3 px-6">{customer.blacklist_date}</td>
+                <td className="py-3 px-6">{format((new Date(customer.blacklist_date)).toISOString(), 'yyyy-MM-dd')}</td>
               </tr>
             ))}
           </tbody>

@@ -63,6 +63,5 @@ export type Blacklist ={
 export type FraudConfirmed = {
     id: string;
     claim_id: string;
-    date_confirmed: string;
-    is_fraud: boolean;
+    is_confirmed: boolean;
 }

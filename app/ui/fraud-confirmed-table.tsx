@@ -1,4 +1,5 @@
-import getFraudConfirmedClaims from "../lib/actions";
+import { getFraudConfirmedClaims } from "../lib/actions";
+
 
 export default async function FraudConfirmedTable() {
     const claims = await getFraudConfirmedClaims();

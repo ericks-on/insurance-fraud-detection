@@ -47,19 +47,19 @@ export default function ClaimsForm({ claimsVisible, policyNumbers }: ClaimsProps
             <div>
               <label className="block text-sm font-medium text-gray-700" htmlFor="incident_type">Incident Type</label>
               <select name="incident_type" id="incident_type" className="mt-1 block w-full border-gray-300 rounded-md bg-gray-100">
-                  <option value="multi_vehicle_collision">Multi-Vehicle Collision</option>
-                  <option value="parked_car">Parked Car</option>
-                  <option value="single_vehicle_collision">Single-Vehicle Collision</option>
-                  <option value="vehicle_theft">Vehicle Theft</option>
+                  <option value="multi-vehicle collision">Multi-Vehicle Collision</option>
+                  <option value="parked car">Parked Car</option>
+                  <option value="single vehicle collision">Single-Vehicle Collision</option>
+                  <option value="vehicle theft">Vehicle Theft</option>
               </select>
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700" htmlFor="collision_type">Collision Type</label>
               <select name="collision_type" id="collision_type" className="mt-1 block w-full border-gray-300 rounded-md bg-gray-100">
-                  <option value="front_collision">Front Collision</option>
-                  <option value="rear_collision">Rear Collision</option>
-                  <option value="side_collision">Side Collision</option>
-                  <option value="not_applicable">Not Applicable</option>
+                  <option value="front collision">Front Collision</option>
+                  <option value="rear collision">Rear Collision</option>
+                  <option value="side collision">Side Collision</option>
+                  <option value="not applicable">Not Applicable</option>
               </select>
             </div>
             <div>
@@ -68,7 +68,7 @@ export default function ClaimsForm({ claimsVisible, policyNumbers }: ClaimsProps
                   <option value="trivial">Trivial</option>
                   <option value="minor">Minor</option>
                   <option value="major">Major</option>
-                  <option value="total_loss">Total Loss</option>
+                  <option value="total loss">Total Loss</option>
               </select>
             </div>
             <div>
@@ -144,18 +144,6 @@ export default function ClaimsForm({ claimsVisible, policyNumbers }: ClaimsProps
             <div>
               <label className="block text-sm font-medium text-gray-700" htmlFor="vehicle_claim">Vehicle Claim</label>
               <input type="number" name="vehicle_claim" id="vehicle_claim" className="mt-1 block w-full border-gray-300 rounded-md bg-gray-100" />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700" htmlFor="auto_make">Auto Make</label>
-              <input type="text" name="auto_make" id="auto_make" className="mt-1 block w-full border-gray-300 rounded-md bg-gray-100" placeholder="Make" />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700" htmlFor="auto_model">Auto Model</label>
-              <input type="text" name="auto_model" id="auto_model" className="mt-1 block w-full border-gray-300 rounded-md bg-gray-100" placeholder="Model" />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700" htmlFor="auto_year">Auto Year</label>
-              <input type="number" name="auto_year" id="auto_year" className="mt-1 block w-full border-gray-300 rounded-md bg-gray-100" placeholder="Year" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700" htmlFor="capital_gain">Capital Gain</label>
